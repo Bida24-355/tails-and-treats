@@ -101,7 +101,27 @@ nav a:hover {
     font-size: 2rem;
     margin-bottom: 15px;
 }
-
+ .gallery {
+     padding: 40px 20px;
+     backgroung-color: #fefefe;
+     text-align: center;
+ }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+ }
+  .image-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+  .image-container img:hover {
+    transform: scale(1.05);
+}
 
 .services {
     padding: 40px 10%;
