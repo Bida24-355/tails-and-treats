@@ -21,7 +21,7 @@ body {
  .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #e3b52f;
+    color: black;
 }
  .nav-links {
     list-style: none;
@@ -59,7 +59,7 @@ body {
 }
  .hero .tagline {
     font-size: 20px;
-    color: #555;
+    color: white;
     margin-bottom: 30px;
  }
  .btn {
@@ -82,14 +82,14 @@ body {
  .image-row {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
 }
  .image-row img {
     width: 180px;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
  ,image-row img:hover {
@@ -114,7 +114,7 @@ body {
 }
 
 .service {
-    max-width: 280px;
+    max-width: 270px;
     text-align: left;
     position: relative;
     padding-left: 40px;
