@@ -1,4 +1,4 @@
-* 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,32 +7,59 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
-    background-color: #fffdf8;
+    background-color: #fff;
     color: #333;
- h1,h2,h3 {
-    font-weight: bold;
-    margin-bottom: 10px
 }
- a {
-    text-decoration: none;
-    color: #e3b52f:
-    font-weight: bold;
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdf6e3;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+ .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e3b52f;
+}
+ .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+ .nav-links a {
+    text-decorations: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+ .nav-links a:hover {
+    color: #e3b52f;
+}
+
  .hero {
-    background: #fefefe;
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
+    background-image: url('Siberian-Husky-laying-down-indoors-next-to-a-large-pile-of-fur-and-brushes.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #222;
 }
  .hero h1 {
     font-size: 48px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
  .hero .highlight {
     color: #e3b52f;
 }
  .hero .tagline {
     font-size: 20px;
-    color: #777;
+    color: #555;
     margin-bottom: 30px;
  }
  .btn {
@@ -42,187 +69,74 @@ body {
     border-radius: 5px;
     font-weight: bold;
     transition: background 0.3s ease;
+    display: inline-block;
 }
  .btn:hover {
-    background-color: #cba825;
+    background-color: #caa62f;
 }
- .how-we-work {
-    padding: 50px 20px;
-    background: #fafafa;
+ .gallery {
+    padding: 40px 20px;
+    background: #fff8el;
     text-align: center;
- }
-
-header {
-    background-color: #8b6f47;
-    color: white;
-    padding: 20px 10%;
+}
+ .image-row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
 }
-
-header h1 {
-    font-size: 1.8rem;
+ .image-row img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+ ,image-row img:hover {
+    transform: scale(1.05);
 }
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-.hero {
-    background-image: url('Siberian-Husky-laying-down-indoors-next-to-a-large-pile-of-fur-and-brushes.jpg'); 
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-}
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.hero-buttons .btn {
-    display: inline-block;
-    background-color: #f4d35e;
-    color: #333;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.hero-buttons .btn:hover {
-    background-color: #ffe18b;
-}
-.welcome {
-    padding: 40px 10%;
-    background-color: #f9f7f1;
-    text-align: center;
-}
-
 .welcome h2 {
     color: #8b6f47;
     font-size: 2rem;
     margin-bottom: 15px;
-}
- .gallery {
-     padding: 40px 20px;
-     backgroung-color: #fefefe;
-     text-align: center;
- }
-  .image-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
- }
-  .image-container img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-  .image-container img:hover {
-    transform: scale(1.05);
-}
-  .how-we-work {
-    padding: 50px 20px
-    background: #fafafa;
-    text-align: center;
-}
- .card-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 30px
-}
- .card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    width: 250px;
-}
- .card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
+}  
 .services {
-    padding: 40px 10%;
-    background-color: #fffdf8;
+    padding: 60px 20%;
+    background-color: #fff;
     text-align: center;
-}
-
-.services h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #8b6f47;
 }
 .service-items {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .service {
-    flex: 1 1 250px;
-    background-color: #f4f1ea;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    max-width: 300px;
+    text-align: left;
+    position: relative;
+    padding-left: 40px;
 }
-
+ .service .number {
+    position: absolute;
+    left: 0;
+    top:0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #e3b52f;
+}
 .service h3 {
     margin-bottom: 10px;
-    color: #5a442e;
+    font-size: 22px;
 }
 footer {
     text-align: center;
-    background-color: #8b6f47;
-    color: white;
+    background-color: #222;
+    color: #fff;
     padding: 20px;
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {
@@ -230,16 +144,4 @@ footer {
         flex-direction: column;
         text-align: center;
     }
- nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
 
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .service-items {
-        flex-direction: column;
-    }
-}
