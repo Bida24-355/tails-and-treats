@@ -86,10 +86,10 @@ body {
     flex-wrap: wrap;
 }
  .image-row img {
-    width: 250px;
+    width: 180px;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
  ,image-row img:hover {
@@ -114,16 +114,20 @@ body {
 }
 
 .service {
-    max-width: 300px;
+    max-width: 280px;
     text-align: left;
     position: relative;
     padding-left: 40px;
+    border-radius: 10px;
+    background: #fff8el;
+    padding: 200px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
  .service .number {
     position: absolute;
-    left: 0;
-    top:0;
-    font-size: 20px;
+    left: 10;
+    top: 10;
+    font-size: 28px;
     font-weight: bold;
     color: #e3b52f;
 }
@@ -140,8 +144,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
+    .image-row img {
+      width:100%;
+      max-width: 150px;
+    }
     }
 
