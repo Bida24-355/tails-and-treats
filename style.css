@@ -9,7 +9,48 @@ body {
     line-height: 1.6;
     background-color: #fffdf8;
     color: #333;
+ h1,h2,h3 {
+    font-weight: bold;
+    margin-bottom: 10px
 }
+ a {
+    text-decoration: none;
+    color: #e3b52f:
+    font-weight: bold;
+}
+ .hero {
+    background: #fefefe;
+    padding: 60px 20px;
+    text-align: center;
+}
+ .hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+ .hero .highlight {
+    color: #e3b52f;
+}
+ .hero .tagline {
+    font-size: 20px;
+    color: #777;
+    margin-bottom: 30px;
+ }
+ .btn {
+    padding: 12px 24px;
+    background-color: #e3b52f;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+ .btn:hover {
+    background-color: #cba825;
+}
+ .how-we-work {
+    padding: 50px 20px;
+    background: #fafafa;
+    text-align: center;
+ }
 
 header {
     background-color: #8b6f47;
