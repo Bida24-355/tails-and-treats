@@ -1,4 +1,4 @@
-* {
+l* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
-    background-color: #fff;
+    background-color: #fff8e1;
     color: #333;
 }
  .navbar {
@@ -21,7 +21,7 @@ body {
  .logo {
     font-size: 24px;
     font-weight: bold;
-    color: black;
+    color: #e3b52f;
 }
  .nav-links {
     list-style: none;
@@ -39,39 +39,46 @@ body {
 }
 
  .hero {
-    padding: 80px 20px;
-    text-align: center;
-    background-image: url('Siberian-Husky-laying-down-indoors-next-to-a-large-pile-of-fur-and-brushes.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
+    width: 100%;
+    height: 500px;
     display: flex;
-    align-items: center;
+   
+}
+ .hero-left {
+    flex: 1;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;  
+}
+ .hero-right {
+    flex: 1;
+    background-color: #fff8e1;
+    display: flex;
+    flex-directions:column;
     justify-content: center;
-    color: #222;
+    align-items: start;
+    padding: 40px;
 }
- .hero h1 {
-    font-size: 48px;
-    margin-bottom: 15px;
-}
- .hero .highlight {
+ .hero-right h1 {
+    font-size: 42px;
     color: #e3b52f;
-}
- .hero .tagline {
-    font-size: 20px;
-    color: white;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
  }
- .btn {
-    padding: 12px 24px;
+  .hero-right .tagline {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 25px;
+  }
+ .hero-right .btn {
+    padding: 10px 22px;
     background-color: #e3b52f;
     color: white;
     border-radius: 5px;
     font-weight: bold;
     transition: background 0.3s ease;
-    display: inline-block;
+    text-decoration: none;
 }
- .btn:hover {
+ . hero-right .btn:hover {
     background-color: #caa62f;
 }
  .gallery {
@@ -82,29 +89,30 @@ body {
  .image-row {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
 }
  .image-row img {
     width: 180px;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
- ,image-row img:hover {
+ .image-row img:hover {
     transform: scale(1.05);
 }
-.welcome h2 {
-    color: #8b6f47;
-    font-size: 2rem;
-    margin-bottom: 15px;
-}  
+
 .services {
     padding: 60px 20%;
     background-color: #fff;
     text-align: center;
 }
+ .services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #e3b52f;
+ }
 .service-items {
     display: flex;
     gap: 40px;
@@ -114,19 +122,19 @@ body {
 }
 
 .service {
-    max-width: 270px;
+    max-width: 280px;
     text-align: left;
     position: relative;
     padding-left: 40px;
     border-radius: 10px;
     background: #fff8el;
-    padding: 200px;
+    padding: 20px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
  .service .number {
     position: absolute;
-    left: 10;
-    top: 10;
+    left: 10px;
+    top: 10px;
     font-size: 28px;
     font-weight: bold;
     color: #e3b52f;
@@ -137,16 +145,40 @@ body {
 }
 footer {
     text-align: center;
-    background-color: #222;
-    color: #fff;
+    background-color: #fdf6e3;
+    color: #777;
     padding: 20px;
     font-size: 14px;
 }
 
 @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      height: auto;
+    }
+    .hero-left,
+    .hero-right {
+       flex: none;
+       width: 100%;
+       height: 300px;
+  }
+    .hero-left {
+    background-position: center;
+}
+    .hero-right {
+     padding: 20px;
+     height: auto;
+ }
     .image-row img {
-      width:100%;
+      width: 100%;
       max-width: 150px;
-    }
-    }
+ }
+    .service-items {
+        flex-direction: column;
+        align-items: center;
+ }
+    .service {
+        max-width: 90%;
+}
+}
 
