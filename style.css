@@ -140,13 +140,29 @@ nav ul li a:hover {
  gap: 20px;
  padding: 40px 20px;
 }
- .shop-gallery img {
-  flex: 0 0 auto;
-  width: 200px;
-  height: 150px;
+ .shop-item {
+  width: 250px;
+  background-colors: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
+}
+ .shop-item:hover {
+  transform: scalel(1.03);
+}
+ .shop-item img {
+  width: 100%;
+  height: 180px;
   object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+ .shop-item p {
+  padding: 10px;
+  font-size: 14px;
+  color: #555;
 }
 .services {
  background-color: #fff;
