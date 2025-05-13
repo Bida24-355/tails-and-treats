@@ -132,6 +132,22 @@ nav ul li a:hover {
  font-weight: 600;
  text-decoration: none;
 }
+.shop-gallery {
+ display: flex;
+ justify-content: center;
+ flex-wrap: nowrap;
+ overflow-x: auto;
+ gap: 20px;
+ padding: 40px 20px;
+}
+ .shop-gallery imh {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 .services {
  background-color: #fff;
  padding-bottom: 60px;
