@@ -320,6 +320,8 @@ footer-socials {
  .cards, 
  .service-cards,
  .shop-gallery {
+   flex-wrap: wrap;
+   justify-content: center;
    flex-direction: column;
    align-items: center;
  }
