@@ -65,6 +65,7 @@ nav ul li a:hover {
   width: 50%;
   height: 100%;
   background-colour: rgba(51,51,51,0.4);
+}
 .hero-left img {
  width: 600px;
  max-width: 100%;
@@ -74,12 +75,12 @@ nav ul li a:hover {
 }
 .hero-right h1 {
  font-size: 48px;
- font-weight: 700;
+ font-weight: bold;
+ color: #000;
+ font-style: italic;
  margin-bottom: 20px;
 }
-.hero-right h1 span {
- color: #fdd835;
-}
+
 .hero-right p {
  font-size: 16px;
  color: #555;
