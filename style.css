@@ -135,10 +135,10 @@ nav ul li a:hover {
 .shop-gallery {
  display: flex;
  justify-content: center;
- flex-wrap: nowrap;
+ flex-wrap: wrap;
  overflow-x: auto;
  gap: 20px;
- padding: 40px 20px;
+ padding: 30px;
 }
  .shop-item {
   width: 250px;
@@ -153,8 +153,8 @@ nav ul li a:hover {
   transform: scalel(1.03);
 }
  .shop-item img {
-  width: 100%;
-  height: 180px;
+  width: 100% !important;
+  height: 180px !important;
   object-fit: cover;
   display: block;
   border-bottom: 1px solid #eee;
