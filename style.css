@@ -140,10 +140,10 @@ nav ul li a:hover {
  gap: 20px;
  padding: 40px 20px;
 }
- .shop-gallery imh {
+ .shop-gallery img {
   flex: 0 0 auto;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 150px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
