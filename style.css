@@ -333,11 +333,15 @@ footer-socials {
    gap: 10px;
  }
  .cards, 
- .service-cards,
- .shop-gallery {
+ .service-cards {
    flex-wrap: wrap;
    justify-content: center;
    flex-direction: column;
+   align-items: center;
+ }
+ .shop-gallery {
+  flex-wrap: wrap;
+   justify-content: center;
    align-items: center;
  }
 }
