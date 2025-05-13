@@ -136,13 +136,12 @@ nav ul li a:hover {
  display: flex;
  justify-content: center;
  flex-wrap: wrap;
- overflow-x: auto;
  gap: 20px;
  padding: 30px;
 }
  .shop-item {
   width: 250px;
-  background-colors: #fff;
+  background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   overflow: hidden;
@@ -150,7 +149,7 @@ nav ul li a:hover {
   text-align: center;
 }
  .shop-item:hover {
-  transform: scalel(1.03);
+  transform: scale(1.03);
 }
  .shop-item img {
   width: 100% !important;
