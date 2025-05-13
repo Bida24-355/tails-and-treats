@@ -50,11 +50,21 @@ nav ul li a:hover {
  display: flex;
  justify-content: space-between;
  align-items: center;
- padding: 80px 50px;
- background-color: #fff;
+ padding: 100px 50px;
+ height: 700px;
+ position: relative;
+ color: #fff;
  background-size: cover;
- background-position: center-left;
+ background-position: center-center;
 }
+.hero: :after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background-colour: rgba(51,51,51,0.4);
 .hero-left img {
  width: 600px;
  max-width: 100%;
