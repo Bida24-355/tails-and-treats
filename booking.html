@@ -5,27 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Book an Appointment | Tails & Treats</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer>
-   const bookedDates = ["2025-05-15", "2025-05-18", "2025-05-22", "2025-05-23"]; 
-   function checkAvailability(event) {
-     event.preventDefault();
-     const form = document.getElementById("bookingForm");
-     const confirmationMessage= document.getElementById("confirmationMessage");
-
-     form.addEventListener("submit",function(e) {
-       e.preventDefault();
-       form.reset()
-       confirmationMessage.style.display="block";
-     const date = form.date.value;
-     const messageDiv = document.getElementById("bookingMessage");
-     if (bookedDates.includes(date)) {
-       messageDiv.innerHTML = `<p style="color:red;">Sorry, this date is fully booked.</p>`;
-       return;
-     }
-     messageDiv.innerHTML = `<p style="color:green;">Thank you! We have noted your booking.</p>`;
-     form.reset();
-   }
-</script>
+  <style>
+    #confirmationMessage {
+      display: none;
+      margin-top: 20px;
+      color: green;
+      font-weight: bold;
+    }
+    #bookingMessage {
+      margin-top: 15px;
+    }
+  </style>
 </head>
 <body>
   <header>Book an Appointment with Tails & Treats!</header>
@@ -61,12 +51,31 @@
       <textarea name="notes" rows="4" placeholder="Additional Notes (Optional)"></textarea>
       <button type="submit">Book Appointment</button>
     </form>
-    <div id="confirmationMessage" style="display:none; margin-top: 20px; color: green; font-weight: bold;">
-      We have noted your booking, Thank You!
+    <div id="bookingMessage">
+    <div id="confirmationMessage">We have noted your booking.Thank You!</div>
     </div>
   </section>
   <footer>
     <div class="footer-bottom">&copy; 2025 Tails & Treats. All rights reserved.</div>
   </footer>
+  <script defer>
+   const bookedDates = ["2025-05-15", "2025-05-18", "2025-05-22", "2025-05-23"];
+    document.getElementById("bookingForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const form = this;
+      const date= form.dare.value;
+      const messageDiv = document.getElementById("bookingMessage");
+
+     form.addEventListener("submit",function(e);
+     if (bookedDates.includes(date)) {
+       messageDiv.innerHTML = `<p style="color:red;">Sorry, this date is fully booked.</p>`;
+       confirmationDiv.style.display="none";
+       return;
+     }
+     messageDiv.innerHTML = "";
+     confirmationDiv.style.display= "block";
+     form.reset();
+   });
+</script>
 </body>
 </html>
