@@ -180,13 +180,6 @@ nav ul li a:hover {
  .shop-item:hover {
   transform: scale(1.03);
 }
- .shop-item img {
-  width: 100% !important;
-  height: 180px !important;
-  object-fit: cover;
-  display: block;
-  border-bottom: 1px solid #eee;
-}
  .shop-item p {
   padding: 10px;
   font-size: 14px;
